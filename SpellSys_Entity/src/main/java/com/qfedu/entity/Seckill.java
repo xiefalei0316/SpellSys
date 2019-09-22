@@ -1,7 +1,9 @@
 package com.qfedu.entity;
 
 import com.baomidou.mybatisplus.annotation.IdType;
+import com.baomidou.mybatisplus.annotation.TableField;
 import com.baomidou.mybatisplus.annotation.TableId;
+import com.baomidou.mybatisplus.annotation.TableName;
 import com.baomidou.mybatisplus.extension.activerecord.Model;
 
 import java.io.Serializable;
@@ -15,6 +17,7 @@ import java.util.Date;
  * @author rainbow
  * @since 2019-09-19
  */
+@TableName("seckill")
 public class Seckill extends Model<Seckill> {
 
     private static final long serialVersionUID = 1L;
