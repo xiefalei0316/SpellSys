@@ -8,6 +8,8 @@
         <module>SpellSys_Entity</module>
         <module>SpellSys_Resource</module>
         <module>SpellSys_Seckill</module>
+        <module>SpellSys_CheckProvider</module>
+        <module>SpellSys_CheckApi</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>
