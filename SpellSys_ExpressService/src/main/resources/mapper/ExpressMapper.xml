@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.qfedu.server.dao.ExpressDao">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="expressVoMap" type="com.qfedu.server.vo.ExpressVo">
+        <id column="id" property="id" />
+        <result column="express_number" property="expressNumber"></result>
+        <result column="express_name" property="expressName"></result>
+        <result column="express_type" property="expressType"></result>
+    </resultMap>
+
+    <select id="findByExpress" parameterType="string" resultMap="expressVoMap">
+        select
+        n.id, n.express_number, c.express_name, c.express_type
+        from
+        express_numbers n
+        inner join
+        express_company c
+        where
+        n.express_id = c.id
+        and
+        n.order_number = #{order_number};
+    </select>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        user_id, order_number, store_number, express_number, express_id
+    </sql>
+    <insert id="addExpress" useGeneratedKeys="true" keyProperty="id">
+        insert into
+        express_numbers(user_id, order_number, store_number, express_number, express_id)
+        values
+        (#{userId}, #{orderNumber}, #{storeNumber}, #{expressNumber}, #{expressId});
+    </insert>
+
+</mapper>

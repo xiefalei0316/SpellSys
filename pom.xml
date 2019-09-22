@@ -7,6 +7,10 @@
         <module>SpellSys_Common</module>
         <module>SpellSys_Entity</module>
         <module>SpellSys_Resource</module>
+        <module>SpellSys_WorkOrderServer</module>
+        <module>SpellSys_WorkOrderConsumer</module>
+        <module>SpellSys_ExpressService</module>
+        <module>SpellSys_ExpressApi</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>

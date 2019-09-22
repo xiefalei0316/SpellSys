@@ -1,0 +1,7 @@
+server:
+  port: 9998
+spring:
+  application:
+    name: ExpressApi
+  profiles:
+    active: dev
