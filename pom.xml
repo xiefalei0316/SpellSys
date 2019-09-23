@@ -10,6 +10,8 @@
         <module>SpellSys_Seckill</module>
         <module>SpellSys_CheckProvider</module>
         <module>SpellSys_CheckApi</module>
+        <module>SpellSys_Sales</module>
+        <module>SpellSys_SalesApi</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>
