@@ -23,15 +23,19 @@
         n.order_number = #{order_number};
     </select>
 
+    <update id="modifyNumberOfQueries">
+        update express_numbers set number_of_queries = number_of_queries + 1 where id = #{id}
+    </update>
+
     <!-- 通用查询结果列 -->
     <sql id="Base_Column_List">
         user_id, order_number, store_number, express_number, express_id
     </sql>
     <insert id="addExpress" useGeneratedKeys="true" keyProperty="id">
         insert into
-        express_numbers(user_id, order_number, store_number, express_number, express_id)
+        express_numbers(user_id, order_number, store_number, express_number, express_id, number_of_queries)
         values
-        (#{userId}, #{orderNumber}, #{storeNumber}, #{expressNumber}, #{expressId});
+        (#{userId}, #{orderNumber}, #{storeNumber}, #{expressNumber}, #{expressId}, 0);
     </insert>
 
 </mapper>

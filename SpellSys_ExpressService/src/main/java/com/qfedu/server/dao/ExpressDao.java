@@ -19,6 +19,13 @@ public interface ExpressDao {
     ExpressVo findByExpress(String orderNumber);
 
     /**
+     * 修改查询量
+     * @param id
+     * @return
+     */
+    int modifyNumberOfQueries(int id);
+
+    /**
      *  发货录入快递单号
      * @param expressNumbers
      * @return

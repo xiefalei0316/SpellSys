@@ -51,6 +51,11 @@ public class ExpressServiceImpl implements ExpressService {
                 querys.put("no", express.getExpressNumber());
                 // 请求参数 快递公司
                 querys.put("type", express.getExpressType());
+
+                if (querys != null) {
+                    expressDao.modifyNumberOfQueries(express.getId());
+                }
+
                 HttpResponse response = null;
                 try {
                     response = ExpressUtils.doGet(host, path, method, headers, querys);

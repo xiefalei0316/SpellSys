@@ -28,6 +28,7 @@ public class ExpressNumbers {
     // 快递单号
     private String expressNumber;
     // 快递公司Id
-    @JsonFormat
     private Integer expressId;
+    // 查询次数
+    private Integer numberOfQueries;
 }

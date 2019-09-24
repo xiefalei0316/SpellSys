@@ -11,6 +11,9 @@
         <module>SpellSys_WorkOrderConsumer</module>
         <module>SpellSys_ExpressService</module>
         <module>SpellSys_ExpressApi</module>
+        <module>SpellSys_Seckill</module>
+        <module>SpellSys_CheckProvider</module>
+        <module>SpellSys_CheckApi</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>

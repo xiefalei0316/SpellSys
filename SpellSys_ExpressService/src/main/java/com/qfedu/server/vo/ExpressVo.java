@@ -15,4 +15,5 @@ public class ExpressVo {
     private String expressNumber;
     private String expressType;
     private String expressName;
+    private Integer numOfQueries;
 }
