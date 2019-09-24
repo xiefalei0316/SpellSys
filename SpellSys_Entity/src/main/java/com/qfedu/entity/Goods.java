@@ -1,4 +1,4 @@
-package com.qfedu.entity.entity;
+package com.qfedu.entity;
 
 import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.annotation.TableId;
